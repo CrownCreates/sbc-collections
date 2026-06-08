@@ -1,0 +1,582 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  background:  center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* PRODUCT GRID */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px; /* tight grid like fashion sites */
+}
+
+/* PRODUCT CARD */
+.product-card {
+  background: #000;
+  border: 1px solid #222;
+  /* Add a subtle border */
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+  /* Space between rows */
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  border-color: #444;
+}
+
+.product-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.05);
+}
+
+.product-card h4 {
+  color: white;
+  margin: 10px 0 5px 0;
+  font-size: 1.2rem;
+}
+
+.product-card p {
+  color: white;
+  margin: 0 0 10px 0;
+  opacity: 0.9;
+}
+
+.product-card button {
+  margin: 0 auto 10px auto;
+  padding: 8px 20px;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+  opacity: 0;
+}
+
+.product-card:hover button {
+  opacity: 1;
+}
+
+/* ABOUT SECTION */
+.about {
+  background: #000;
+  color: white;
+}
+
+/* Apply a sharp, high-end font to headings and the brand description */
+#about h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800; /* Extra bold look */
+    letter-spacing: -1px; /* Tighter letter spacing for that premium look */
+}
+
+#about span {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    letter-spacing: 3px; /* Stretched wide tracking for the subtitle uppercase */
+}
+
+#about p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+/* Add this to your main CSS file/tag */
+.breadcrumb-item+.breadcrumb-item::before {
+  color: #fff;
+  /* Makes breadcrumb separators white */
+}
+
+.accordion-button::after {
+  filter: invert(1);
+  /* Makes the accordion arrow white to match the theme */
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  /* Removes the blue glow from buttons */
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Make sure buttons change color clearly on hover */
+.btn-outline-light:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #333;
+  padding: 15px 0;
+}
+/* TABLET */
+@media (max-width: 992px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* MOBILE */
+@media (max-width: 992px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.product-image {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.product-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: 0.5s ease;
+}
+
+/* Overlay hidden by default */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.product-image:hover img {
+  transform: scale(1.1);
+}
+
+.product-image:hover .overlay {
+  opacity: 1;
+}
+
+@media (min-width: 992px) {
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+    .checkout-footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: black;
+        padding: 15px;
+        border-top: 1px solid #333;
+        z-index: 1050;
+    }
+}
+
+h2 {
+    font-weight: 900;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+}
+
+/* Add a custom class for that "Luxury" feel */
+.section-title {
+    font-size: clamp(2rem, 5vw, 4rem); /* Responsive size that scales */
+    margin-bottom: 3rem;
+}
+
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2), #000), ;
+    background-size: cover;
+    background-position: center;
+}
+
+.product-card h5 {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    min-height: 2.4em; /* Ensures the box stays the same height even if names are long */
+}
+
+/* Make the Add to Cart button feel more high-end */
+.add-to-cart {
+    border-radius: 0; 
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+.image-container {
+    width: 100%;
+    /* Increase the height or use a larger aspect ratio */
+    aspect-ratio: 4 / 5; 
+    background: #111;
+}
+
+.product-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Make the text bigger too so it matches the larger card */
+.product-card h5 {
+    font-size: 1.5rem !important; 
+    margin-top: 15px;
+}
+/* This makes the card container itself take up more vertical space */
+.product-grid .col {
+    margin-bottom: 40px;
+}
+
+.product-card:hover img {
+    transform: scale(1.08); /* A subtle zoom-in on hover looks high-end */
+}
+
+.product-card h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900 !important; /* Makes the font extra thick */
+}
+
+/* Ensure the grid doesn't squeeze the card on medium screens */
+@media (min-width: 992px) {
+    .product-grid.row-cols-lg-3 .col {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+        padding: 0 30px; /* Gives more air between the big cards */
+    }
+}
+
+#mainProductImg {
+    transition: transform 0.5s ease;
+    cursor: zoom-in;
+}
+
+#mainProductImg:hover {
+    transform: scale(1.1); /* Zooms into the shirt slightly */
+}
+
+/* Make sure the container hides the overflow so the zoom stays inside the box */
+.col-md-7 {
+    overflow: hidden;
+}
+
+.product-grid .col {
+    /* This ensures every 'column' takes up exactly 25% of the row on desktop */
+    display: flex;
+    padding: 0 12px; /* This creates the 'equal space' look */
+}
+
+.product-card {
+    width: 100%; /* Force the card to fill that 25% space */
+    display: flex;
+    flex-direction: column;
+}
+
+.image-container {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Keeping them square helps the alignment stay perfect */
+    overflow: hidden;
+}
+
+/* Ensure images don't distort on different screens */
+.image-container {
+    width: 100%;
+    aspect-ratio: 1 / 1; 
+    overflow: hidden;
+    background: #0a0a0a;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 
+
+.product-card {
+    transition: transform 0.3s ease;
+}
+
+/* Make the button hidden until hover on desktop */
+.cart-btn {
+    opacity: 0;
+    transition: all 0.3s ease;
+    width: 80%;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.product-card:hover .cart-btn {
+    opacity: 1;
+}
+
+/* Ensure button is always visible on mobile since there is no 'hover' */
+@media (max-width: 768px) {
+    .cart-btn {
+        opacity: 1;
+        width: 90%;
+        padding: 5px;
+    }
+}
+
+.product-card img {
+    border-radius: 8px; /* Slight roundness for a modern look */
+    background-color: #1a1a1a; /* Placeholder color while loading */
+}
+
+.product-card {
+    max-width: 100%;
+}
+
+.product-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+/* style.css */
+
+/* Forces the track to stay in one line and allows swiping */
+.sbc-scroll-track {
+    scroll-behavior: smooth;
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 20px;
+    scrollbar-width: none; /* Hides scrollbar on Firefox */
+}
+
+.sbc-scroll-track::-webkit-scrollbar {
+    display: none; /* Hides scrollbar on Chrome/Safari */
+}
+
+/* This is the container for each individual product */
+.sbc-card {
+    width: 300px; /* This keeps your images from looking huge */
+    flex-shrink: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #1a1a1a;
+    position: relative;
+}
+
+.sbc-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover; /* This clips the image perfectly into the box */
+}
+
+/* The button inside the image */
+.sbc-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    color: black;
+    padding: 12px 24px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    width: 80%;
+    text-align: center;
+}
+
+/* style.css */
+
+/* Desktop Sizing (Screens wider than 992px) */
+@media (min-width: 992px) {
+    .sbc-card {
+        width: 450px !important; /* Makes it much bigger on desktop */
+    }
+    .sbc-card img {
+        height: 600px !important; /* Increases height for that premium look */
+    }
+    .sbc-btn {
+        font-size: 1.1rem;
+        padding: 15px;
+    }
+}
+
+/* Mobile/Tablet Sizing */
+.sbc-card {
+    width: 280px; 
+    flex-shrink: 0;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #111;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.sbc-card img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+}
+
+/* Hide arrows on mobile to save space (since users swipe with fingers) */
+@media (max-width: 768px) {
+    #sbcScrollLeft, #sbcScrollRight {
+        display: none !important;
+    }
+}
+
+/* style.css */
+
+/* This handles the card shape */
+.sbc-card {
+    width: 280px; 
+    flex-shrink: 0;
+    /* Changed from 15px to 40px for that 'extra round' look */
+    border-radius: 40px; 
+    overflow: hidden;
+    background: #111;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+/* Ensure the image respects the rounded corners */
+.sbc-card img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 40px; /* Matches the card */
+}
+
+/* Update for Desktop (Media Aspect) */
+@media (min-width: 992px) {
+    .sbc-card {
+        width: 450px !important;
+        border-radius: 60px; /* Slightly more round for bigger cards */
+    }
+    .sbc-card img {
+        height: 600px !important;
+        border-radius: 60px;
+    }
+    
+    .sbc-btn {
+        /* Making the button match the roundness of the card */
+        border-radius: 20px; 
+        bottom: 30px;
+    }
+}
+
+/* style.css */
+
+/* High-end rounding for the Summary Box */
+.rounded-5 {
+    border-radius: 40px !important;
+}
+
+/* Style for the items your JS creates */
+.cart-item {
+    display: flex;
+    align-items: center;
+    background: #0a0a0a;
+    padding: 20px;
+    border-radius: 30px; /* Matching the SBC vibe */
+    border: 1px solid #1a1a1a;
+    justify-content: space-between;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.fw-black {
+    font-weight: 900;
+}
+
+#checkout-btn {
+    transition: all 0.3s ease;
+}
+
+#checkout-btn:hover {
+    background: #fff;
+    transform: scale(1.02);
+}
+
+.product-image-frame {
+    height: 100%;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    background-color: #050505; /* Deep black background */
+}
+
+#mainProductImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This prevents the image from stretching */
+}
+
+/* Matching the SBC roundness from the home page */
+.product-image-frame img {
+    border-radius: 0px; /* Keep sharp for this split-screen look */
+}
+
+.hover-opacity-100:hover {
+    opacity: 1 !important;
+    transform: translateX(-5px); /* Slight movement to the left */
+    transition: all 0.3s ease;
+}
+
+/* MARQUEE STRIP */
+.marquee-strip {
+    background: #c9a84c;
+    color: #000;
+    overflow: hidden;
+    padding: 10px 0;
+    white-space: nowrap;
+}
+
+.marquee-track {
+    display: inline-flex;
+    animation: marquee 20s linear infinite;
+}
+
+.marquee-track span {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-right: 20px;
+}
+
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
