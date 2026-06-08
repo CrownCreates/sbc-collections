@@ -15,7 +15,7 @@ const ALL_PRODUCTS = [
     id: "born-this-way-sbc",
     numericId: 2,
     name: "Born this way SBC",
-    price: 45000,
+    price: 30000,
     category: "tshirts",
     img: "images/tshirts/born this way SBC T-shirt.jpeg",
     variants: [
@@ -26,7 +26,7 @@ const ALL_PRODUCTS = [
     id: "sbc-army-bucket-cap",
     numericId: 3,
     name: "SBC ARMY BUCKET CAP",
-    price: 15000,
+    price: 30000,
     category: "accessories",
     img: "images/headwear/SBC ARMY BUCKET CAP.jpeg",
     variants: [
@@ -37,7 +37,7 @@ const ALL_PRODUCTS = [
     id: "sbc-skull-cap",
     numericId: 4,
     name: "SBC skull cap",
-    price: 15000,
+    price: 25000,
     category: "headwear",
     img: "images/headwear/SBC skullcap.jpeg",
     variants: [
@@ -48,7 +48,7 @@ const ALL_PRODUCTS = [
     id: "sbc-slides",
     numericId: 5,
     name: "SBC SLIDES",
-    price: 15000,
+    price: 70000,
     category: "footwear",
     img: "images/footwear/SBC PALM SLIPPERS.jpeg",
     variants: [
@@ -59,7 +59,7 @@ const ALL_PRODUCTS = [
     id: "sbc-jacket-n-short",
     numericId: 6,
     name: "SBC JACKET N SHORT",
-    price: 15000,
+    price: 70000,
     category: "fullset",
     img: "images/fullset/SBC JACKET N SHORT.jpeg",
     variants: [
@@ -70,7 +70,7 @@ const ALL_PRODUCTS = [
     id: "sbc-star-tracksuit",
     numericId: 7,
     name: "SBC STAR TRACKSUIT",
-    price: 15000,
+    price: 70000,
     category: "fullset",
     img: "images/fullset/SBC STARTRACKSUIT BLACK.jpeg",
     variants: [
@@ -81,7 +81,7 @@ const ALL_PRODUCTS = [
     id: "sbc-track-id-1",
     numericId: 8,
     name: "SBC TRACK ID 1",
-    price: 15000,
+    price: 70000,
     category: "fullset",
     img: "images/fullset/SBC TRACK ID 1.jpeg",
     variants: [
@@ -92,7 +92,7 @@ const ALL_PRODUCTS = [
     id: "sbc-tracksuit-green",
     numericId: 9,
     name: "SBC Track suit Green",
-    price: 15000,
+    price: 70000,
     category: "fullset",
     img: "images/fullset/SBC Tracksuit Green.jpeg",
     variants: [
@@ -103,7 +103,7 @@ const ALL_PRODUCTS = [
     id: "sbc-tracksuit-red-n-white",
     numericId: 10,
     name: "SBC TRACK SUIT RED N WHITE",
-    price: 15000,
+    price: 70000,
     category: "fullset",
     img: "images/fullset/SBC TRACKSUIT NAVY RED N WHITE.jpeg",
     variants: [
@@ -114,7 +114,7 @@ const ALL_PRODUCTS = [
     id: "sbc-tracksuit-white",
     numericId: 11,
     name: "SBC TRACK SUIT WHITE",
-    price: 15000,
+    price: 70000,
     category: "fullset",
     img: "images/fullset/SBC Tracksuit White.jpeg",
     variants: [
@@ -125,7 +125,7 @@ const ALL_PRODUCTS = [
     id: "sbc-shorts",
     numericId: 12,
     name: "SBC SHORTS",
-    price: 15000,
+    price: 30000,
     category: "fullset",
     img: "images/shorts/SBC SHORTS.jpeg",
     variants: [
@@ -136,7 +136,7 @@ const ALL_PRODUCTS = [
     id: "senator-scarface",
     numericId: 13,
     name: "SENATOR SCAR FACE",
-    price: 15000,
+    price: 30000,
     category: "tshirts",
     img: "images/tshirts/SBC BLACK SCARFACE.jpeg",
     variants: [
@@ -147,18 +147,18 @@ const ALL_PRODUCTS = [
     id: "sbc-shirt-logo",
     numericId: 14,
     name: "SBC SHIRT LOGO",
-    price: 15000,
+    price: 30000,
     category: "tshirts",
-    img: "images/tshirts/SBC LOGO PLAIN SHIRT.jpeg",
+    img: "images/tshirts/sbc-shirt-logo.jpeg",
     variants: [
-      { color: "Black", images: ["images/tshirts/SBC LOGO PLAIN SHIRT.jpeg"] }
+      { color: "Black", images: ["images/tshirts/sbc-shirt-logo.jpeg"] }
     ]
   },
   {
     id: "sbc-skeleton-shirt",
     numericId: 15,
     name: "SBC SKELETON SHIRT",
-    price: 15000,
+    price: 30000,
     category: "tshirts",
     img: "images/tshirts/sbc-skeleton-shirt.jpeg",
     variants: [
@@ -169,7 +169,7 @@ const ALL_PRODUCTS = [
     id: "sbc-skeleton-head",
     numericId: 16,
     name: "SBC SKELETON Love",
-    price: 15000,
+    price: 30000,
     category: "tshirts",
     img: "images/tshirts/sbc-skeleton-head.jpeg",
     variants: [
@@ -180,7 +180,7 @@ const ALL_PRODUCTS = [
     id: "sbc-n-yb",
     numericId: 17,
     name: "SBC N YB",
-    price: 15000,
+    price: 30000,
     category: "tshirts",
     img: "images/tshirts/sbc-nbayoungboy-shirt.jpeg",
     variants: [
@@ -191,7 +191,7 @@ const ALL_PRODUCTS = [
     id: "boys-dont-cry-sbc",
     numericId: 18,
     name: "BOYS DON'T CRY SBC",
-    price: 15000,
+    price: 30000,
     category: "tshirts",
     img: "images/tshirts/sbc-boys-don't-cry.jpeg",
     variants: [
@@ -202,7 +202,7 @@ const ALL_PRODUCTS = [
     id: "fear-is-the-thief",
     numericId: 19,
     name: "FEAR IS THE THIEF",
-    price: 15000,
+    price: 30000,
     category: "tshirts",
     img: "images/tshirts/sbc-fear-is-the-thief.jpeg",
     variants: [
@@ -213,7 +213,7 @@ const ALL_PRODUCTS = [
     id: "sbc-graphic-tee",
     numericId: 20,
     name: "SBC GRAPHIC TEE",
-    price: 15000,
+    price: 30000,
     category: "tshirts",
     img: "images/tshirts/sbc-graphic-tee.jpeg",
     variants: [
@@ -224,7 +224,7 @@ const ALL_PRODUCTS = [
     id: "sbc-stay-strong",
     numericId: 21,
     name: "SBC STAY STRONG",
-    price: 15000,
+    price: 30000,
     category: "tshirts",
     img: "images/tshirts/sbc-graphic-tee-id2.jpeg",
     variants: [
@@ -235,7 +235,7 @@ const ALL_PRODUCTS = [
     id: "im-not-your-ex-sbc",
     numericId: 22,
     name: "I'M NOT YOUR EX SBC",
-    price: 15000,
+    price: 30000,
     category: "tshirts",
     img: "images/tshirts/sbc-i'm-not-your-ex.jpeg",
     variants: [
@@ -246,7 +246,7 @@ const ALL_PRODUCTS = [
     id: "hustlers-mode",
     numericId: 23,
     name: "HUSTLERS MODE",
-    price: 15000,
+    price: 30000,
     category: "tshirts",
     img: "images/tshirts/sbc-kiss-me-on-the-side.jpeg",
     variants: [
@@ -257,7 +257,7 @@ const ALL_PRODUCTS = [
     id: "sbc-plea-sure",
     numericId: 24,
     name: "SBC PLEA SURE",
-    price: 15000,
+    price: 30000,
     category: "tshirts",
     img: "images/tshirts/sbc-plea-sure.jpeg",
     variants: [
@@ -268,7 +268,7 @@ const ALL_PRODUCTS = [
     id: "stop-the-war-make-peace",
     numericId: 25,
     name: "STOP THE WAR MAKE PEACE",
-    price: 15000,
+    price: 30000,
     category: "tshirts",
     img: "images/tshirts/sbc-stop-war-make-peace.jpeg",
     variants: [
@@ -279,7 +279,7 @@ const ALL_PRODUCTS = [
     id: "trust-your-heart",
     numericId: 26,
     name: "TRUST YOUR HEART",
-    price: 15000,
+    price: 30000,
     category: "tshirts",
     img: "images/tshirts/sbc-trust-your-heart.jpeg",
     variants: [
@@ -290,7 +290,7 @@ const ALL_PRODUCTS = [
     id: "boys-dont-cry-sbc-v2",
     numericId: 27,
     name: "BOYS DON'T CRY SBC 2",
-    price: 15000,
+    price: 30000,
     category: "tshirts",
     img: "images/tshirts/sbc-boys-don't-cry2.jpeg",
     variants: [
@@ -301,7 +301,7 @@ const ALL_PRODUCTS = [
     id: "standard-white-tee-design",
     numericId: 28,
     name: "STANDARD WHITE TEE DESIGN",
-    price: 15000,
+    price: 30000,
     category: "tshirts",
     img: "images/tshirts/sbc-monkey-white.jpeg",
     variants: [
@@ -312,7 +312,7 @@ const ALL_PRODUCTS = [
     id: "sbc-generic-shirt",
     numericId: 29,
     name: "SBC GENERIC SHIRT",
-    price: 15000,
+    price: 30000,
     category: "tshirts",
     img: "images/tshirts/sbc-purple.jpeg",
     variants: [
@@ -323,7 +323,7 @@ const ALL_PRODUCTS = [
     id: "sbc-new-york",
     numericId: 30,
     name: "SBC NEW YORK",
-    price: 15000,
+    price: 30000,
     category: "tshirts",
     img: "images/tshirts/sbc-new-york-yellow.jpeg",
     variants: [
@@ -334,7 +334,7 @@ const ALL_PRODUCTS = [
     id: "sbc-trust-your-heart-v2",
     numericId: 31,
     name: "SBC TRUST YOUR HEART 2",
-    price: 15000,
+    price: 30000,
     category: "tshirts",
     img: "images/tshirts/sbc-trust-your-heart.jpeg",
     variants: [
@@ -346,7 +346,7 @@ const ALL_PRODUCTS = [
     id: "sbc-tony-montana",
     numericId: 32,
     name: "SBC TONY MONTANA",
-    price: 15000,
+    price: 30000,
     category: "tshirts",
     img: "images/tshirts/sbc-tony-montana.jpeg",
     variants: [

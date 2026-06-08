@@ -54,7 +54,7 @@ function renderCart() {
 // WhatsApp Checkout
 if (checkoutBtn) {
     checkoutBtn.addEventListener('click', () => {
-        const phoneNumber = "2348058988162";
+        const phoneNumber = "23407030248139";
         let message = `*NEW ORDER - SENATOR BLACK COLLECTIONS*\n\n`;
 
         cart.forEach((item, index) => {
