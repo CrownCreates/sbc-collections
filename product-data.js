@@ -414,7 +414,7 @@ const ALL_PRODUCTS = [
     id: "sbc-jorts",
     numericId: 38,
     name: "SBC Jean Shorts",
-    price: 30000,
+    price: 50000,
     category: "shorts",
     img: "images/shorts/sbc-jorts.jpeg",
     variants: [
