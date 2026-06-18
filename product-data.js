@@ -352,6 +352,79 @@ const ALL_PRODUCTS = [
     variants: [
       { color: "Black", images: ["images/tshirts/sbc-tony-montana.jpeg"] }
     ]
+  },
+    {
+    id: "sbc-trackie",
+    numericId: 33,
+    name: "SBC Tracksuit",
+    price: 70000,
+    category: "fullset",
+    img: "images/fullset/sbc-trackie1.jpeg",
+    variants: [
+      { color: "Black", images: ["images/fullset/sbc-trackie1.jpeg"] }
+    ]
+  },
+   {
+    id: "sbc-trackie",
+    numericId: 34,
+    name: "SBC Tracksuit",
+    price: 70000,
+    category: "fullset",
+    img: "images/fullset/sbc-trackie2.jpeg",
+    variants: [
+      { color: "Black", images: ["images/fullset/sbc-trackie2.jpeg"] }
+    ]
+  },
+
+    {
+    id: "sbc-shirt1",
+    numericId: 35,
+    name: "SBC Graphic Tee",
+    price: 30000,
+    category: "tshirts",
+    img: "images/tshirts/sbc-shirt1.jpeg",
+    variants: [
+      { color: "Black", images: ["images/tshirts/sbc-shirt1.jpeg"] }
+    ]
+  },
+
+    {
+    id: "sbc-tanktop1",
+    numericId: 36,
+    name: "SBC Strident Tank Top",
+    price: 30000,
+    category: "tshirts",
+    img: "images/tshirts/sbc-tanktop1.jpeg",
+    variants: [
+      { color: "Black", images: ["images/tshirts/sbc-tanktop1jpeg"] }
+    ]
+  },
+  {
+    id: "sbc-tanktop",
+    numericId: 37,
+    name: "SBC Tank Top",
+    price: 30000,
+    category: "tshirts",
+    img: "images/tshirts/sbc-tanktop.jpeg",
+    variants: [
+      { color: "Black", images: ["images/tshirts/sbc-tanktop.jpeg"] }
+    ]
+  },
+  {
+    id: "sbc-jorts",
+    numericId: 38,
+    name: "SBC Jean Shorts",
+    price: 30000,
+    category: "shorts",
+    img: "images/shorts/sbc-jorts.jpeg",
+    variants: [
+      { color: "Black", images: ["images/shorts/sbc-jorts.jpeg"] }
+    ]
   }
+  
+
+
+  
+
 
 ];
